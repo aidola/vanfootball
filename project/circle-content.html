@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <title>圈子-内容页</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/dropload.css">
+    <link rel="stylesheet" href="css/css.css" type="text/css" />
+    <script src="js/zepto.min.js"></script>
+	<script src="js/dropload.min.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/circle.js"></script>
+    <script>
+        !function(n){
+            var e=n.document,
+                t=e.documentElement,
+                i=640,
+                d=i/100,
+                o="orientationchange"in n?"orientationchange":"resize",
+                a=function(){
+                    var n=t.clientWidth||320;
+                    n>640&&(n=640),t.style.fontSize=n/d*0.1+"px";
+                };
+            e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1));
+        }(window);
+    </script>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-logo"><a href="javascript:history.go(-1)" class="lt"><img src="images/his-go-ico02.png" alt=""/></a><img src="images/circle_logo02.png" alt=""/></div>
+        <div class="header-tit">
+            <span class="tit-name">蒙特卡洛特圈</span>
+            <img src="images/circle-head-mark.png" alt=""/>
+        </div>
+    </div>
+</header>
+<div class="content">
+    <div class="Hot_area">
+        <div class="Hot-title">
+            <div class="Hot-title-head">
+                <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+            </div>
+            <div class="Hot-title-name">
+                <dl>
+                    <dt>就是起了个怪名字你能</dt>
+                    <dd>3小时前</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="Hot-content">
+            <h2>皇马你就不准夺冠！我大巴萨说了你就就不能！就不能！就不能！</h2>
+            <p>皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马你就不能夺冠，皇马！</p>
+            <img src="images/area_img01.jpg" alt=""/>
+        </div>
+        <div class="Hot-acc clearfix">
+            <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+        </div>
+    </div>
+    <section class="comment_list">
+        <div class="comment_tit">
+            <h2>评论</h2>
+        </div>
+        <ul class="comment_area container lists" id='commentArea'>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>伊基塔是无敌的<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>伊基塔是无敌的<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！只有我！只有我！（重要的事情说三遍）爱的是大神大神的你们这些妖孽是永远不能征服地球的！只有我！只有我！只有我！（重要的事情说三遍）爱的是神大神的你们这些妖孽是永远不能征服地球的！只有我！只有我！只有我！（重要的事情说三遍）爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</div>
+<div class="footer-disc">
+    <div class="footer-disc-content">
+        <div class="disc-input">
+            <span>楼主很绅士，咱家要起哄......</span>
+        </div>
+        <div class="disc-note">
+            <img src="images/note-ico.png" class="note-ico" alt=""/>
+            <span>12</span>
+        </div>
+    </div>
+</div>
+<!--评论box-->
+<div class="comment-box">
+    <textarea name="" id="myTxt" cols="10" rows="3" placeholder="楼主很绅士，咱家要起哄......"></textarea>
+    <div class="comment-btn clearfix">
+        <button type="button">发布</button>
+    </div>
+</div>
+<script>
+$(function(){
+		
+	//赞+1事件
+	HotAdd();
+	
+	//没有评论时不显示评论内容
+	if($('.comment_list').find('.comment_area').children().length<1){
+		$('.comment_list').hide();
+	}
+	
+	$('.footer-disc .disc-input').delegate('span','click',function(){
+		$('.comment-box').show();
+		$('.comment-box').find('textarea').trigger('focus');
+		$('.comment-box').find('textarea').focus();
+		createBg();
+	});
+	//点击note按钮返回第一条评论
+	$('.disc-note').on('click',function(){
+		var pos=$('.comment_tit').offset().top;
+		window.scrollTo(0,pos);
+	});
+
+	//header固定事件
+	fixHeader();
+	//footer事件
+	//fixFooter();
+	
+	//下拉加载更多事件
+	//IsLoading();
+	
+	var counter = 0;
+	// 每页展示4个
+	var num = 4;
+	var pageStart = 0,pageEnd = 0;
+
+	// dropload
+	$('.comment_list').dropload({
+		scrollArea : window,
+		domUp : {
+			domClass   : 'dropload-up',
+			domRefresh : '<div class="dropload-refresh">↓下拉刷新...</div>',
+			domUpdate  : '<div class="dropload-update">↑释放更新...</div>',
+			domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中...</div>'
+		},
+		domDown : {
+			domClass   : 'dropload-down',
+			domRefresh : '<div class="dropload-refresh">↑上拉加载更多...</div>',
+			domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中...</div>',
+			domNoData  : '<div class="dropload-noData">已加载全部</div>'
+		},
+		loadUpFn : function(me){
+			$.ajax({
+				type: 'GET',
+				url: 'json/update.json',
+				dataType: 'json',
+				success: function(data){
+					var result = '';
+					for(var i = 0; i < data.lists.length; i++){
+						result +=   '<li class="item opacity">'
+										+'<div class="comment-title">'
+											+'<div class="comment-title-head">'
+												+'<div class="head-img-box"><img src="'+data.lists[i].pic+'" alt=""/></div>'
+											+'</div>'
+											+'<div class="comment-title-name">'
+												+'<dl>'
+													+'<dt>'+data.lists[i].title+'<img src="images/title-name-ico.png" alt=""/></dt>'
+													+'<dd>3小时前</dd>'
+												+'</dl>'
+											+'</div>'
+										+'</div>'
+										+'<div class="comment-content">'
+											+'<p>'+data.lists[i].con+'</p>'
+										+'</div>'
+										+'<div class="comment-acc Hot-acc clearfix">'
+											+'<div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>'
+										+'</div>'
+									+'</li>';
+					}
+					// 为了测试，延迟1秒加载
+					setTimeout(function(){
+						$('.lists').html(result);
+						// 每次数据加载完，必须重置
+						me.resetload();
+						// 重置索引值，重新拼接more.json数据
+						counter = 0;
+						// 解锁
+						me.unlock();
+						me.noData(false);
+						//赞+1重新遍历
+						HotAdd();
+					},1000);
+				},
+				error: function(xhr, type){
+					alert('Ajax error!');
+					// 即使加载出错，也得重置
+					me.resetload();
+				}
+			});
+		},
+		loadDownFn : function(me){
+			$.ajax({
+				type: 'GET',
+				url: 'json/more.json',
+				dataType: 'json',
+				success: function(data){
+					var result = '';
+					counter++;
+					pageEnd = num * counter;
+					pageStart = pageEnd - num;
+					
+					for(var i = pageStart; i < pageEnd; i++){
+						result +=   '<li class="item opacity">'
+										+'<div class="comment-title">'
+											+'<div class="comment-title-head">'
+												+'<div class="head-img-box"><img src="'+data.lists[i].pic+'" alt=""/></div>'
+											+'</div>'
+											+'<div class="comment-title-name">'
+												+'<dl>'
+													+'<dt>'+data.lists[i].title+'<img src="images/title-name-ico.png" alt=""/></dt>'
+													+'<dd>3小时前</dd>'
+												+'</dl>'
+											+'</div>'
+										+'</div>'
+										+'<div class="comment-content">'
+											+'<p>'+data.lists[i].con+'</p>'
+										+'</div>'
+										+'<div class="comment-acc Hot-acc clearfix">'
+											+'<div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>'
+										+'</div>'
+									+'</li>';
+						if((i + 1) >= data.lists.length){
+							// 锁定
+							me.lock();
+							// 无数据
+							me.noData();
+							break;
+						}
+					}
+					// 为了测试，延迟1秒加载
+					setTimeout(function(){
+						$('.lists').append(result);
+						// 每次数据加载完，必须重置
+						me.resetload();
+						//赞+1重新遍历
+						HotAdd();
+					},1000);
+				},
+				error: function(xhr, type){
+					alert('Ajax error!');
+					// 即使加载出错，也得重置
+					me.resetload();
+				}
+			});
+		},
+		threshold : 50
+	});
+	
+});	
+</script>
+</body>
+</html>

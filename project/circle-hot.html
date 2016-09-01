@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <title>圈子-热圈</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/css.css" type="text/css" />
+    <script src="js/zepto.min.js"></script>
+	<!--<script src="js/scroll-up-bar.js"></script>-->
+    <script src="js/fastclick.js"></script>
+    <script src="js/circle.js"></script>
+    <script>
+        !function(n){
+            var e=n.document,
+                t=e.documentElement,
+                i=640,
+                d=i/100,
+                o="orientationchange"in n?"orientationchange":"resize",
+                a=function(){
+                    var n=t.clientWidth||320;
+                    n>640&&(n=640),t.style.fontSize=n/d*0.1+"px";
+                };
+            e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1));
+        }(window);
+    </script>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-logo"><a href="javascript:history.go(-1)" class="lt"><img src="images/his-go-ico02.png" alt=""/></a><img src="images/circle_logo02.png" alt=""/></div>
+        <div class="header-btns" style="display:none;">
+            <a href="javascript:;" target="_blank" class="btn_news"></a>
+            <a href="javascript:;" target="_blank" class="btn_hot_active"></a>
+            <a href="javascript:;" target="_blank" class="btn_data"></a>
+        </div>
+    </div>
+    <div class="tab_menu" id="tabMenu">
+        <a href="circle-hot.html" class="active tab_menu_list">热圈</a>
+        <a href="circle-hot2.html" class="tab_menu_list">热帖</a>
+    </div>
+    <div class="tab_menu_space" id="tabMenuSpace"></div>
+</header>
+<div class="content" id="content">
+    <div class="tab_list" id="tabList">
+        <div class="tab_list_item tab_list_rq">
+            <section class="my_circle">
+                <h2>我的关注</h2>
+                <ul class="circle_list container">
+                    <li>
+                        <a href="circle-list.html" onfocus="this.blur()">
+                            <img src="images/list_ico01.jpg" alt=""/>
+                            <dl>
+                                <dt>曼联圈</dt>
+                                <dd>关注 <span>999999</span></dd>
+                                <dd>帖子 <span>999999</span></dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="circle-list.html">
+                            <img src="images/list_ico01.jpg" alt=""/>
+                            <dl>
+                                <dt>曼联圈</dt>
+                                <dd>关注 <span>999999</span></dd>
+                                <dd>帖子 <span>999999</span></dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="circle-list.html">
+                            <img src="images/list_ico01.jpg" alt=""/>
+                            <dl>
+                                <dt>曼联圈</dt>
+                                <dd>关注 <span>999999</span></dd>
+                                <dd>帖子 <span>999999</span></dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="sort_circle">
+                <h2>我的圈子</h2>
+                <div class="sort_item">
+                    <h3><img src="images/tri_ico.png" class="tri_ico" alt=""/>推荐<span>(10)</span></h3>
+                    <ul class="circle_list container">
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>曼联圈</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>曼联圈</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>曼联圈</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sort_item">
+                    <h3><img src="images/tri_ico.png" class="tri_ico" alt=""/>中超<span>(10)</span></h3>
+                    <ul class="circle_list container">
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>广州恒大</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>上海上港</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>山东鲁能</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>北京国安</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>江苏苏宁</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>上海申花</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>石家庄永昌</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>延边富德</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>天津泰达</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>长春亚泰</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>河南建业</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>重庆力帆</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>广州富力</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>辽宁宏远</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>河北华夏</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>杭州绿城</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sort_item">
+                    <h3><img src="images/tri_ico.png" class="tri_ico" alt=""/>中甲<span>(10)</span></h3>
+                    <ul class="circle_list container">
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>天津权健</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>北京北控</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>北京人和</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>北京人和</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>上海申鑫</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>广州梅州</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>新疆雪豹</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>青岛黄海</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>贵州智诚</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>浙江毅腾</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>武汉卓尔</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>大连超越</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>大连一方</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>湖南湘涛</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>内蒙古中优</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>青岛中能</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>深圳宇恒</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sort_item">
+                    <h3><img src="images/tri_ico.png" class="tri_ico" alt=""/>龙之队<span>(10)</span></h3>
+                    <ul class="circle_list container">
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>国家队</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>女足</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>国青</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sort_item">
+                    <h3><img src="images/tri_ico.png" class="tri_ico" alt=""/>英超<span>(10)</span></h3>
+                    <ul class="circle_list container">
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>曼联</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>曼城</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>阿森纳</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>利物浦</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>切尔西</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>热刺</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sort_item">
+                    <h3><img src="images/tri_ico.png" class="tri_ico" alt=""/>意甲<span>(10)</span></h3>
+                    <ul class="circle_list container">
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>AC米兰</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>国际米兰</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>尤文图斯</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>罗马</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sort_item">
+                    <h3><img src="images/tri_ico.png" class="tri_ico" alt=""/>西甲&法甲 <span>(10)</span></h3>
+                    <ul class="circle_list container">
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>皇马</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>巴萨</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>马竞</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>巴黎</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sort_item">
+                    <h3><img src="images/tri_ico.png" class="tri_ico" alt=""/>德甲<span>(10)</span></h3>
+                    <ul class="circle_list container">
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>拜仁</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>多特蒙德</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>勒沃库森</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>沙尔克04</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sort_item">
+                    <h3><img src="images/tri_ico.png" class="tri_ico" alt=""/>欧洲杯<span>(10)</span></h3>
+                    <ul class="circle_list container">
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>法国</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>西班牙</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>德国</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>葡萄牙</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>英格兰</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>比利时</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>意大利</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>瑞典</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>捷克</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="circle-list.html">
+                                <img src="images/list_ico01.jpg" alt=""/>
+                                <dl>
+                                    <dt>俄罗斯</dt>
+                                    <dd>关注 <span>999999</span></dd>
+                                    <dd>帖子 <span>999999</span></dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+
+	//设置body背景色
+	$('body').css({'height':$('body').height(),'background':'#f5f5f5'});
+		
+	//热圈切换页吸顶条事件
+	//$('#header').scrollupbar();
+	/*$('.tab_menu').css('top',$('#header').height());
+	$('.content').css('paddingTop',$('#header').height());
+	$(window).scroll(function(){
+		$('body').css('paddingTop',$('#header').height());
+	});*/
+	
+	function MenuFixed(id){
+		if(!id) return;
+		var tabMenu = document.getElementById(id);
+		tabMenuSpace.style=tabMenuSpace.offsetHeight+'px';
+		$(window).scroll(function(){
+			var t = tabMenu.offsetTop||tabMenuSpace.offsetTop;
+			
+			var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+			if(scrollTop>t){
+				tabMenu.style.position='fixed';
+				tabMenuSpace.style.display='block';
+			}else{
+				tabMenu.style.position='';
+				tabMenuSpace.style.display='none';
+			}
+		});
+	}
+	
+	MenuFixed('tabMenu');
+	
+
+	//热圈&&热帖 选项卡
+	
+	/*$('.tab_menu>a').on('click',function(){
+		var _this=$(this).index();
+		//localStorage.setItem('curMenu',_this);
+		$(this).addClass('active').siblings().removeClass('active');
+		$('.tab_list>div').eq(_this).addClass('active').siblings().removeClass('active');
+
+		$('.content-img-box img').Resize(0.75);
+	});*/
+
+	//圈子分类点击下拉
+	$('.sort_item').eq(getCookie('dis-index')-1).find('h3').next().css('display',getCookie('dis'));
+	$('.sort_item h3').on('click',function(){
+		if($(this).next().css('display')=='none'){
+			$(this).next().show();
+			$(this).find('img').addClass('tri_ico_rotate');
+		}else{
+			$(this).next().hide();
+			$(this).find('img').removeClass('tri_ico_rotate');
+		}
+		addCookie('dis',$(this).next().css('display'));
+		addCookie('dis-index',$(this).parent().index());
+	});
+	
+	//热圈-下拉分标签栏个数计算	(注意：调取数据源的时候需要重新计算--再运行一次)	
+	$('.sort_item').each(function(){
+		var liN=$(this).children('ul').children('li').length;
+		$(this).children('h3').find('span').html('('+liN+')');
+	});
+	
+	//图片高度自适应
+	$('.content-img-box img').Resize(0.75);
+	$(window).resize(function(){
+		$('.content-img-box img').Resize(0.75);
+	});
+});	
+</script>
+</body>
+</html>

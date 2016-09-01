@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <title>圈子-列表</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/css.css" type="text/css" />
+    <script src="js/zepto.min.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/circle.js"></script>
+    <script>
+        !function(n){
+            var e=n.document,
+                t=e.documentElement,
+                i=640,
+                d=i/100,
+                o="orientationchange"in n?"orientationchange":"resize",
+                a=function(){
+                    var n=t.clientWidth||320;
+                    n>640&&(n=640),t.style.fontSize=n/d*0.1+"px";
+                };
+            e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1));
+        }(window);
+    </script>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-logo"><a href="javascript:history.go(-1)" class="lt"><img src="images/his-go-ico02.png" alt=""/></a><img src="images/circle_logo02.png" alt=""/></div>
+        <div class="header-note">
+            <a href="circle-post.html"><img src="images/note-ico-black.png" alt=""/></a>
+        </div>
+    </div>
+</header>
+<div class="circle-banner">
+    <img class="banner-img" src="images/banner-01.jpg" alt=""/>
+    <div class="addAttention" id="addAttention">+关注</div>
+    <div class="per-com clearfix">
+        <div class="personNum">99999 <img src="images/person-ico.png" alt=""/></div><div class="commentNum">99999 <img src="images/comment-ico.png" alt=""/></div>
+    </div>
+</div>
+<div class="content">
+    <section class="comment_list">
+        <ul class="Hot_list container" id="">
+            <li>
+                <a href="circle-content.html">
+                    <div class="Hot-title">
+                        <div class="Hot-title-head">
+                            <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                        </div>
+                        <div class="Hot-title-name">
+                            <dl>
+                                <dt>就是起了个怪名字你能</dt>
+                                <dd>3小时前</dd>
+                            </dl>
+                            <div class="Hot-title-else"><img src="images/hotfire-cio.png" alt=""/>热帖</div>
+                        </div>
+                    </div>
+                    <div class="Hot-content">
+                        <h2>我就是没事儿找事儿坏小子，你能怎样？哦对了啊你能举报咱！！3</h2>
+                        <p>我就是没事儿找事儿坏小子，我其实是想说很多没用的各路废话！认了我吧！...</p>
+                        <ol class="content-img-box">
+                            <li><img src="images/btn_news_black.png" alt=""/></li>
+                            <li><img src="images/content-box-img02.jpg" alt=""/></li>
+                            <li><img src="images/content-box-img03.jpg" alt=""/></li>
+                            <li><img src="images/area_img01.jpg" alt=""/></li>
+                            <li><img src="images/test.png" alt=""/></li>
+                            <li><img src="images/test2.png" alt=""/></li>
+                        </ol>
+                    </div>
+                    <div class="Hot-acc clearfix">
+                        <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="circle-content.html">
+                    <div class="Hot-title">
+                        <div class="Hot-title-head">
+                            <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                        </div>
+                        <div class="Hot-title-name">
+                            <dl>
+                                <dt>就是起了个怪名字你能</dt>
+                                <dd>3小时前</dd>
+                            </dl>
+                            <div class="Hot-title-else"><img src="images/hotfire-cio.png" alt=""/>热帖</div>
+                        </div>
+                    </div>
+                    <div class="Hot-content">
+                        <h2>我就是没事儿找事儿坏小子，你能怎样？哦对了</h2>
+                        <p>我就是没事儿找事儿坏小子，我其实是想说很多没用的我就是没事儿找事儿坏小子，我其实是想说很多没啊啊用的各路废话！认了我吧！...</p>
+                        <ol class="content-img-box">
+                            <li><img src="images/content-box-img01.jpg" alt=""/></li>
+                            <li><img src="images/content-box-img02.jpg" alt=""/></li>
+                            <li><img src="images/content-box-img03.jpg" alt=""/></li>
+                        </ol>
+                    </div>
+                    <div class="Hot-acc clearfix">
+                        <div><span>99</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="circle-content.html">
+                    <div class="Hot-title">
+                        <div class="Hot-title-head">
+                            <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                        </div>
+                        <div class="Hot-title-name">
+                            <dl>
+                                <dt>就是起了个怪名字你能</dt>
+                                <dd>3小时前</dd>
+                            </dl>
+                            <div class="Hot-title-else"><img src="images/hotfire-cio.png" alt=""/>热帖</div>
+                        </div>
+                    </div>
+                    <div class="Hot-content">
+                        <h2>我就是没事儿找事儿坏小子，你能怎样？哦对了啊你能举报咱！！3</h2>
+                        <p>我就是没事儿找事儿坏小子，我其实是想说很多没用的各路废话！认了我吧！...</p>
+                        <ol class="content-img-box">
+                            <li><img src="images/content-box-img01.jpg" alt=""/></li>
+                            <li><img src="images/content-box-img02.jpg" alt=""/></li>
+                            <li><img src="images/test.png" alt=""/></li>
+                        </ol>
+                    </div>
+                    <div class="Hot-acc clearfix">
+                        <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="circle-content.html">
+                    <div class="Hot-title">
+                        <div class="Hot-title-head">
+                            <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                        </div>
+                        <div class="Hot-title-name">
+                            <dl>
+                                <dt>就是起了个怪名字你能</dt>
+                                <dd>3小时前</dd>
+                            </dl>
+                            <div class="Hot-title-else"><img src="images/hotfire-cio.png" alt=""/>热帖</div>
+                        </div>
+                    </div>
+                    <div class="Hot-content">
+                        <h2>我就是没事儿找事儿坏小子，你能怎样？哦对了啊你能举报咱！！3</h2>
+                        <p>我就是没事儿找事儿坏小子，我其实是想说很多没用的各路废话！认了我吧！...</p>
+                    </div>
+                    <div class="Hot-acc clearfix">
+                        <div><span>99999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
+<script>
+$(function(){
+	//header固定事件
+	fixHeader();
+	
+	//点赞事件
+	//HotAdd();
+	
+	//宽度高度自适应
+    contentImgResize();
+	$(window).resize(function(){
+        contentImgResize();
+	});
+    function contentImgResize(){
+        $('.content-img-box li').Resize(0.75);
+
+        $('.content-img-box').each(function(){
+            var _thisImg=this.getElementsByTagName('img');
+            for(var i=0; i<_thisImg.length; i++){
+                if(_thisImg[i].offsetWidth >= _thisImg[i].offsetHeight){
+                    _thisImg[i].style.width='auto';
+                    _thisImg[i].style.height='100%';
+                    _thisImg[i].style.left='-'+(_thisImg[i].offsetWidth-_thisImg[i].parentNode.offsetWidth)*1/2+'px';
+                    //如果过宽  以2倍为界限
+                    //if(_thisImg[i].offsetWidth > _thisImg[i].offsetHeight*5){
+                    if(_thisImg[i].offsetWidth > _thisImg[i].offsetHeight*2){
+                        _thisImg[i].style.left=0;
+                        //创建长图
+                        var aMark=document.createElement('span');
+                        aMark.className='aMark';
+                        aMark.innerHTML='长图';
+                        var aSpan=_thisImg[i].parentNode.getElementsByTagName('span');
+                        if(aSpan.length>0){
+                            return;
+                        }else{
+                            _thisImg[i].parentNode.appendChild(aMark);
+                        }
+                    }
+                }else if(_thisImg[i].offsetWidth < _thisImg[i].offsetHeight){
+                    _thisImg[i].style.width='100%';
+                    _thisImg[i].style.height='auto';
+                    //如果过高
+                    //if(_thisImg[i].offsetWidth < _thisImg[i].offsetHeight*1/5){
+                    if(_thisImg[i].offsetWidth < _thisImg[i].offsetHeight*1/2){
+                        _thisImg[i].style.left=0;
+                        //创建长图
+                        var aMark=document.createElement('span');
+                        aMark.className='aMark';
+                        aMark.innerHTML='长图';
+                        //_thisImg[i].parentNode.appendChild(aMark);
+                        var aSpan=_thisImg[i].parentNode.getElementsByTagName('span');
+                        if(aSpan.length>0){
+                            return;
+                        }else{
+                            _thisImg[i].parentNode.appendChild(aMark);
+                        }
+                    }
+                }
+            }
+        });
+    }
+	//关注-取消关注
+	var addFlag=true;
+	$('.addAttention').on('click',function(){
+		if(addFlag){
+			$('.addAttention').css({'color':'#999'}).html('已关注');
+			addFlag=false;
+		}else{
+			$('.addAttention').css({'color':'#404040'}).html('+关注');
+			addFlag=true;
+		}
+	});
+
+
+});
+</script>
+</body>
+</html>

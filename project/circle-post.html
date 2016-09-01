@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <title>圈子-发帖</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link rel="stylesheet" href="css/css.css" type="text/css" />
+    <script src="js/zepto.min.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/circle.js"></script>
+    <script>
+        !function(n){
+            var e=n.document,
+                t=e.documentElement,
+                i=640,
+                d=i/100,
+                o="orientationchange"in n?"orientationchange":"resize",
+                a=function(){
+                    var n=t.clientWidth||320;
+                    n>640&&(n=640),t.style.fontSize=n/d*0.1+"px";
+                };
+            e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1));
+        }(window);
+    </script>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-logo"><a href="javascript:history.go(-1);" class="lt"><img src="images/his-go-ico02.png" alt=""/></a><img src="images/circle_logo02.png" alt=""/></div>
+        <div class="header-note">
+            <img src="images/note-ico-black.png" alt=""/>
+        </div>
+    </div>
+</header>
+<!--发帖-->
+<div class="sendPost">
+    <div class="postInner">
+        <header class="post-title">
+            <label for="" class="">标题:</label>
+            <input type="text" class="" autofocus placeholder="输入标题" />
+        </header>
+        <div class="post-content">
+            <label for="" class="">吐槽:</label>
+            <textarea name="" id="" cols="30" rows="4" placeholder="吐槽一下吧。。"></textarea>
+        </div>
+        <ul class="post-img-list">
+          <!-- <li><img src="images/head-img01.jpg" alt="1"/><span class="del-img">X</span></li>
+           <li><img src="images/head-img01.jpg" alt="2"/><span class="del-img">X</span></li>
+           <li><img src="images/head-img01.jpg" alt="3"/><span class="del-img">X</span></li>-->
+        </ul>
+        <div class="photoInsert clearfix">
+            <div class="insert">
+                <!-- <div class="camera">
+                    <img class="img-camera"  src="images/camera-ico.png" alt=""/>
+                    <input id="file0" type="file" accept="image/jpeg,image/png,image/gif,image/bmp" class="camera-input" capture="camera"/>
+                </div>-->
+               <div class="img">
+                    <img class="img-img" src="images/img-ico.png" alt=""/>
+                    <input id="file0" type="file" class="camera-input" capture="camera" accept="image/jpeg,image/png,image/gif,image/bmp" />
+                </div>
+            </div>
+            <div class="send">
+                <button type="button">发布</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+window.onload=function(){
+	$('#header').css('opacity',1);
+	//header固定事件
+	fixHeader();
+
+	//宽度高度自适应
+	$('.post-img-list img').Resize(1);
+	$(window).resize(function(){
+		$('.post-img-list img').Resize(1);
+		
+	});
+	$('.sendPost').css({
+		top:$('.header').height()
+		
+	});
+	$('.post-title').find('input').trigger('focus');
+	$('.post-title').find('input').focus();
+	var imgJson={};
+
+	$("#file0").change(function(){
+		console.log($('.post-img-list li').length);
+		if($('.post-img-list li').length>2){
+			alert('最多只可以上传三张图片哦！');
+			return;
+		}
+		var objFile = $("#file0")[0].files[0];
+		var objUrl = getObjectURL(objFile);
+		if (objUrl) {
+			var $img=$('<li><img class="sImg" src="'+objUrl+'" alt="1" /><span class="del-img">X</span></li>');
+			var timestamp=new Date().getTime()+""+Math.random();
+			timestamp=timestamp.replace('.','');
+			imgJson['img'+timestamp]= $.extend({},objFile);
+			$img.find('.del-img').data("file",'img'+timestamp).bind('click',function(){
+				delete imgJson['img'+$(this).data("file")];
+				$(this).parent().remove();
+			});
+			$(".post-img-list").append($img);
+			$('.post-img-list li').each(function(){
+				$(this).find('img').css('height',$(this).width());
+			});
+		}
+		$(this).val('');
+
+	}) ;
+	//建立一個可存取到該file的url
+	function getObjectURL(file) {
+		var url = null ;
+		if (window.createObjectURL!=undefined) { // basic
+			url = window.createObjectURL(file) ;
+		} else if (window.URL!=undefined) { // mozilla(firefox)
+			url = window.URL.createObjectURL(file) ;
+		} else if (window.webkitURL!=undefined) { // webkit or chrome
+			url = window.webkitURL.createObjectURL(file) ;
+		}
+		return url ;
+	}
+	$('.send button').on('click',function(){
+		//window.location.href='http://www.baidu.com';
+		var fd = new FormData();
+		fd.append("ooo","123");
+		for(var k in imgJson){
+			fd.append(k,imgJson[k]);
+		}
+		if(window.XMLHttpRequest){
+			var xhr=new XMLHttpRequest(); //xhr
+		}else{
+			var xhr=new ActiveXObject('Microsoft.XMLHTTP');
+		}
+		xhr.open("POST", "xxx.php",true);//调用自己的后台数据
+		xhr.onload = function(oEvent) {
+			if (xhr.status >= 200 && xhr.status < 300 || xhr.status == 304) {
+				//成功的时候调用事件
+				
+			}else{
+				//失败的时候调用事件
+				
+			}
+		};
+		xhr.send(fd);
+
+		return false;
+	});
+};
+</script>
+</body>
+</html>

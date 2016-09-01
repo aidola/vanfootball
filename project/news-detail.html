@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <title>新闻-详情页</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link href="css/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css" type="text/css" />
+    <script src="js/zepto.min.js"></script>
+	<script src="js/action.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/circle.js"></script>
+    <script>
+        !function(n){
+            var e=n.document,
+                t=e.documentElement,
+                i=640,
+                d=i/100,
+                o="orientationchange"in n?"orientationchange":"resize",
+                a=function(){
+                    var n=t.clientWidth||320;
+                    n>640&&(n=640),t.style.fontSize=n/d*0.1+"px";
+                };
+            e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1));
+        }(window);
+    </script>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-logo"><a href="circle-hot.html" class="lt"><img src="images/his-go-ico02.png" alt=""/></a><img src="images/circle_logo02.png" alt=""/></div>
+        <div class="header-share">
+            <div class="shoucang" onclick=""><img src="images/icon_shoucang1_black.png" alt=""/></div>
+            <div class="share" onclick=""><img src="images/icon_fenxiang_black.png" alt=""/></div>
+        </div>
+    </div>
+</header>
+<div class="news-banner">
+    <img class="banner-img" src="images/banner-news.jpg" alt=""/>
+    <div class="eyes-on">6999<img src="images/icon_eye.png" alt=""/></div>
+</div>
+<div class="content">
+	<section class="news-content container">
+    	<h1 class="news-title">欧冠血染罗马主场0-2四连负！拉齐奥深陷客场泥潭</h1>
+        <div class="news-sub-title">
+            <div class="news-from"><img src="images/title-name-ico03.png" alt=""/>欧冠官网</div>
+            <div class="news-time">6月2日 11:04</div>
+        </div>
+        <div class="news-text">
+            <p>北京时间11月29日22时(意大利当地时间15时)，意甲第14轮开始4场较量，罗马主场0比2负于亚特兰大，替补出场的麦孔还被罚下。热那亚主场1比2负于卡尔皮切沃主场2比3负于乌迪内斯；维罗纳客场2比3负于弗罗西诺内。稍后比赛，拉齐奥客场0比1负于恩波利，遭到客场4连败。</p>
+            <img src="images/news-pic01.jpg" alt="" />
+            <p>在2比2战平博洛尼亚，1比6惨败巴塞罗那后，红狼急需胜利提振士气。德罗西和卡斯坦回到阵中，但萨拉赫和热尔维尼奥继续缺阵。门将斯琴斯尼意外失去位置，改由德桑克蒂斯把门。亚特兰大上次客场击败罗马要追溯到2003年。奥林匹克球场上座率很低。</p>
+            <img src="images/news-pic02.jpg" alt="" />
+            <p>半时，弗洛伦齐左侧开出角球，皮亚尼奇头球被门线上的奇加里尼破坏。库尔奇头球前顶，亚历杭德罗-戈麦斯反越位射门被德桑克蒂斯偏出。18岁尼日利亚前锋萨迪克-乌马尔换下亚戈-法尔克，麦孔换下弗洛伦齐，但罗马进球毫无起色。第81分钟，戈麦斯禁区内接应过顶球，麦孔将其放倒，被红牌罚下！丹尼斯主罚点球打进球门顶端，2比0。</p>
+            <img src="images/news-pic03.jpg" alt="" />
+            <p>北京时间2月18日3时45分，欧冠1/8决赛首回合开始2场较量，皇马客场2比0击败罗马。</p>
+            <iframe class="iframe-video" height='600' width='100%' src="" frameborder=0 allowfullscreen></iframe>
+            <div class="video" id="CuPlayer" >
+				<script>
+                <!--
+                var vID        = ""; 
+                var vWidth     = "100%";
+                var vHeight    = 400;
+                var vFile      = "CuSunV2set.xml";
+                var vPlayer    = "player.swf?v=2.5";
+				//开场未播放时的图片显示
+                var vPic       = "images/start.jpg";
+                var vCssurl    = "css/mini.css";
+                
+                //PC,安卓,iOS
+                var vMp4url    = "http://demo.cuplayer.com/file/d0014rhfwk1.p1301.1.mp4";
+                
+                //-->
+                </script> 
+                <script class="CuPlayerVideo" data-mce-role="CuPlayerVideo" type="text/javascript" src="js/CuSunX1.min.js"></script>
+            </div>
+        </div>
+        <div class="news-editor">责任编辑：伊基塔</div>
+    </section>
+    <section class="comment_list">
+        <div class="comment_tit">
+            <h2 class="news-title">评论</h2>
+        </div>
+        <ul class="comment_area container lists" id='commentArea'>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>伊基塔是无敌的<img src="images/title-name-ico.png" alt=""/><img src="images/title-name-ico02.jpg" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>头像全都一个样<img src="images/title-name-ico.png" alt=""/><img src="images/title-name-ico03.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！只有我！只有我！（重要的事情说三遍）爱的是大神大神的你们这些妖孽是永远不能征服地球的！只有我！只有我！只有我！（重要的事情说三遍）爱的是神大神的你们这些妖孽是永远不能征服地球的！只有我！只有我！只有我！（重要的事情说三遍）爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>头像全都一个样<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>滚艹<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>头像全都一个样<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>头像全都一个样<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>头像全都一个样<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>头像全都一个样<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+            <li>
+                <div class="comment-title">
+                    <div class="comment-title-head">
+                        <div class="head-img-box"><img src="images/head-img01.jpg" alt=""/></div>
+                    </div>
+                    <div class="comment-title-name">
+                        <dl>
+                            <dt>头像全都一个样<img src="images/title-name-ico.png" alt=""/></dt>
+                            <dd>3小时前</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <p>你们这些妖孽是永远不能征服地球的！只有我！<br/>只有我！只有我！（重要的事情说三遍）<br/>爱的是大神大神的</p>
+                </div>
+                <div class="comment-acc Hot-acc clearfix">
+                    <div><span>999</span><img src="images/Hot-acc-ico01.png" alt=""/></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+</div>
+<div class="footer-disc">
+    <div class="footer-disc-content">
+        <div class="disc-input">
+            <span>楼主很绅士，咱家要起哄......</span>
+        </div>
+        <div class="disc-note">
+            <img src="images/note-ico.png" class="note-ico" alt=""/>
+            <span>12</span>
+        </div>
+    </div>
+</div>
+<!--评论box-->
+<div class="comment-box">
+    <textarea name="" id="myTxt" cols="10" rows="3" placeholder="楼主很绅士，咱家要起哄......"></textarea>
+    <div class="comment-btn clearfix">
+        <button type="button">发布</button>
+    </div>
+</div>
+<script>
+$(function(){
+	//header固定事件
+	fixHeader();
+	
+	//footer事件
+	//fixFooter();
+	
+	//点赞事件
+	//HotAdd();
+	
+	//没有评论时不显示评论内容
+	if($('.comment_list').find('.comment_area').children().length<1){
+		$('.comment_list').hide();
+	}
+	
+	$('.footer-disc .disc-input').find('span').on('click',function(){
+		$('.comment-box').show();
+		$('.comment-box').find('textarea').trigger('focus');
+		$('.comment-box').find('textarea').focus();
+		createBg();
+	});
+	
+	//点击note按钮返回第一条评论
+	$('.disc-note').on('click',function(){
+		var pos=$('.comment_tit').offset().top;
+		window.scrollTo(0,pos);
+	});
+	
+
+});
+</script>
+</body>
+</html>
