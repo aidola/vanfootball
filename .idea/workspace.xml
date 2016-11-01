@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.12690355">
-              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -363,7 +363,13 @@
       <option name="project" value="LOCAL" />
       <updated>1477971415661</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2016年11月1日11:36:52">
+      <created>1477971438860</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1477971438860</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -434,7 +440,7 @@
     <entry file="file://$PROJECT_DIR$/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12690355">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
